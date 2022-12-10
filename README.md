@@ -1,14 +1,14 @@
 =======
-# Decentratwitter
+# Blockchain Twitter
 
-## Technology Stack & Tools
+## How to Run
 
-- Solidity (Writing Smart Contract)
-- Javascript (React & Testing)
-- [Ethers](https://docs.ethers.io/v5/) (Blockchain Interaction)
-- [Hardhat](https://hardhat.org/) (Development Framework)
-- [Ipfs](https://ipfs.io/) (Metadata storage)
-- [React routers](https://v5.reactrouter.com/) (Navigational components)
+- Run Hardhat node
+  [npx hardhat run]
+- Deploy smartcontract on hardhat localhost
+  [npx hardhat run scripts/deploy.js --network localhost]
+- Run Frontend
+  [npm start]
 
 ## Requirements For Initial Setup
 - Install [NodeJS](https://nodejs.org/en/), should work with any node version below 16.5.0
