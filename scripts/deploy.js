@@ -3,9 +3,9 @@ const { ethers } = require('hardhat');
 async function main() {
   const [deployer, user1] = await ethers.getSigners();
   // We get the contract factory to deploy
-  const DecentratwitterFactory = await ethers.getContractFactory("Decentratwitter");
+  const BlockchaintwitterFactory = await ethers.getContractFactory("Blockchaintwitter");
   // Deploy contract
-  const decentratwitter = await DecentratwitterFactory.deploy();
+  const blockchaintwitter = await BlockchaintwitterFactory.deploy();
   // Save contract address file in project
   const contractsDir = __dirname + "/../src/contractsData";
   if (!fs.existsSync(contractsDir)) {
@@ -13,17 +13,17 @@ async function main() {
   }
 
   fs.writeFileSync(
-    contractsDir + `/decentratwitter-address.json`,
-    JSON.stringify({ address: decentratwitter.address }, undefined, 2)
+    contractsDir + `/blockchaintwitter-address.json`,
+    JSON.stringify({ address: blockchaintwitter.address }, undefined, 2)
   );
 
-  const contractArtifact = artifacts.readArtifactSync("Decentratwitter");
+  const contractArtifact = artifacts.readArtifactSync("Blockchaintwitter");
 
   fs.writeFileSync(
-    contractsDir + `/decentratwitter.json`,
+    contractsDir + `/blockchaintwitter.json`,
     JSON.stringify(contractArtifact, null, 2)
   );
-  console.log("Decentratwitter deployed to:", decentratwitter.address);
+  console.log("Blockchaintwitter deployed to:", blockchaintwitter.address);
 }
 
 main()

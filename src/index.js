@@ -1,7 +1,10 @@
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Buffer } from 'buffer';
 import 'bootstrap/dist/css/bootstrap.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
 const container = document.getElementById('root');
 const root = createRoot(container);
 
