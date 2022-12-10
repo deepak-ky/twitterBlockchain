@@ -1,14 +1,19 @@
-=======
 # Blockchain Twitter
 
 ## How to Run
 
-- Run Hardhat node
-  [npx hardhat run]
-- Deploy smartcontract on hardhat localhost
-  [npx hardhat run scripts/deploy.js --network localhost]
-- Run Frontend
-  [npm start]
+###  1. Run Hardhat node
+  ```
+  npx hardhat run
+  ```
+###  2. Deploy smartcontract on hardhat localhost
+  ```
+  npx hardhat run scripts/deploy.js --network localhost
+  ```
+###  3. Run Frontend
+  ```
+  npm start
+  ```
 
 ## Requirements For Initial Setup
 - Install [NodeJS](https://nodejs.org/en/), should work with any node version below 16.5.0
